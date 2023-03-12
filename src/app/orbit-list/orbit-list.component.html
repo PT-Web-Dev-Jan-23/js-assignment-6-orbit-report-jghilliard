@@ -8,7 +8,7 @@
     </tr>
     <tr class="data-row" *ngFor = "let each of satellites">
         <td>{{each.name}}</td>
-        <td>{{each.type}}</td>
+        <td [class.warning]="each.isSpaceDebris()">{{each.type}}</td>
         <td>{{each.operational}}</td>
         <td>{{each.orbitType}}</td>
         <td>{{each.launchDate}}</td>
