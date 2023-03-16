@@ -6,7 +6,7 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row" *ngFor = "let each of satellites">
+    <tr class="data-row" *ngFor = "let each of satellites" >
         <td>{{each.name}}</td>
         <td [class.warning]="each.isSpaceDebris()">{{each.type}}</td>
         <td>{{each.operational}}</td>
